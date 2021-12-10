@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 const H = "Header";
 const links = [
   { text: "categories", href: "/categories", icon: "/assets/icons/categories.svg" },
@@ -13,7 +14,14 @@ export default function Header() {
       <div className="cont flex justify-between items-center">
         <Link href="/">
           <a className={`${H}__logo-name`}>
-            <img className="logo" src="/assets/logo.svg" alt="Aviary Marketplace" />
+            <Image
+              layout="fixed"
+              width={74}
+              height={37}
+              className="logo"
+              src="/assets/logo.svg"
+              alt="Aviary Marketplace"
+            />
             <div className="name">
               <p>Aviary</p>
               <p>Marketplace</p>
@@ -25,7 +33,14 @@ export default function Header() {
             <div key={i} className="flex items-center">
               <Link href={link.href}>
                 <a className={`${H}__link`}>
-                  <img className="icon" src={link.icon} alt={link.text} />
+                  <Image
+                    layout="fixed"
+                    width={20}
+                    height={20}
+                    className="icon"
+                    src={link.icon}
+                    alt={link.text}
+                  />
                   <span className="text">{link.text}</span>
                 </a>
               </Link>
@@ -35,7 +50,14 @@ export default function Header() {
             </div>
           ))}
           <button className={`${H}__cart-button`}>
-            <img className="mr-1" src="/assets/icons/cart.svg" alt="cart" />{" "}
+            <Image
+              layout="fixed"
+              width={20}
+              height={20}
+              className="mr-1"
+              src="/assets/icons/cart.svg"
+              alt="cart"
+            />{" "}
             <span className="uppercase font-bold">cart (5)</span>
           </button>
         </div>

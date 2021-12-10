@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Socials from "./Socials";
@@ -14,7 +15,14 @@ export default function Footer() {
       <div className="cont flex items-center justify-between ">
         <Link href="/">
           <a className={`${F}__logo-name`}>
-            <img className="logo" src="/assets/logo.svg" alt="Aviary Marketplace" />
+            <Image
+              layout="fixed"
+              width={74}
+              height={37}
+              className="logo"
+              src="/assets/logo.svg"
+              alt="Aviary Marketplace"
+            />
             <div className="name">
               <p>Aviary</p>
               <p>Marketplace</p>
@@ -32,7 +40,14 @@ export default function Footer() {
         <div className="grid grid-cols-2 w-1/4 gap-4">
           {links.map((l, i) => (
             <a href={l.href} key={i} className="flex items-center gap-1">
-              <img className="w-4 h-4" src={l.icon} alt={l.text} />
+              <Image
+                layout="fixed"
+                width={16}
+                height={16}
+                className="w-4 h-4"
+                src={l.icon}
+                alt={l.text}
+              />
               <p className="text-xs text-white uppercase leading-none">{l.text}</p>
             </a>
           ))}

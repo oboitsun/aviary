@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import AviaryParrotCard from "./AviaryParrotCard";
 import Heading from "./Heading";
@@ -13,7 +14,14 @@ export default function MostPopular() {
       </div>
       <div className="flex items-center justify-center py-8">
         <button className={`MostPopular__button`}>
-          <img className="mr-2" src="/assets/icons/load_more.svg" alt="cart" />{" "}
+          <Image
+            layout="fixed"
+            width={20}
+            height={20}
+            className="mr-2"
+            src="/assets/icons/load_more.svg"
+            alt="cart"
+          />{" "}
           <span className="uppercase font-bold">Load More</span>
         </button>
       </div>

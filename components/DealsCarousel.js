@@ -36,7 +36,11 @@ export default () => {
                 Buy 2 parrots, get the third one for free!
               </p>
             </div>
-            <img
+            <Image
+              layout="responsive"
+              width={1240}
+              height={200}
+              objectFit="cover"
               className="w-full"
               src="/assets/commercial-img.jpg"
               alt="buy 2, get 1 for free"
@@ -54,7 +58,11 @@ export default () => {
                 Buy 2 parrots, get the third one for free!
               </p>
             </div>
-            <img
+            <Image
+              layout="responsive"
+              width={1240}
+              height={200}
+              objectFit="cover"
               className="w-full"
               src="/assets/commercial-img.jpg"
               alt="buy 2, get 1 for free"
