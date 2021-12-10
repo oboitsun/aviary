@@ -2,14 +2,15 @@
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import Image from "next/image";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-const DC = "DealsCarousel";
+
 export default () => {
+  const DC = "DealsCarousel";
   return (
     <div className={`${DC} cont relative overflow-hidden `}>
       <img id="deals-prev" src="/assets/icons/arrow-prev.svg" alt="previous slide" />
