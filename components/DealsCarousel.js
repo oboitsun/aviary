@@ -9,7 +9,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-export default () => {
+export default function DealsCarousel() {
   const DC = "DealsCarousel";
   return (
     <div className={`${DC} cont relative overflow-hidden `}>
@@ -73,4 +73,4 @@ export default () => {
       </Swiper>
     </div>
   );
-};
+}
