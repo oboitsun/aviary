@@ -18,11 +18,10 @@ export default function MostPopular() {
             layout="fixed"
             width={20}
             height={20}
-            className="mr-2"
             src="/assets/icons/load_more.svg"
             alt="cart"
           />{" "}
-          <span className="uppercase font-bold">Load More</span>
+          <span className="uppercase font-bold ml-2">Load More</span>
         </button>
       </div>
     </div>
