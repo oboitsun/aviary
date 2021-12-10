@@ -5,7 +5,9 @@ export default function AviaryParrotCard() {
   return (
     <div className={PC}>
       <div className={`${PC}__pic`}>
-        <Image layout="fill" className="" src="/assets/parrot.jpg" alt="parrot" />
+        <div className="inner-pic">
+          <Image layout="fill" objectFit="cover" src="/assets/parrot.jpg" alt="parrot" />
+        </div>
       </div>
       <div className={`${PC}__text-part`}>
         <p className="name">Lorem Ipsum (15 Weeks)</p>
