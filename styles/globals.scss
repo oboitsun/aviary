@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap");
+
+@import "./variables.scss";
+@import "./Header.scss";
+@import "./DealsCarousel.scss";
+@import "./AviaryParrotCard.scss";
+@import "./MostPopular.scss";
+@import "./Footer.scss";
+body {
+  min-height: 100vh;
+  background: #e5e5e5;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.cont {
+  width: 100%;
+  padding: 0 toRem(20);
+  margin: 0 auto;
+  @media (min-width: toRem(1280)) {
+    max-width: toRem(1280);
+  }
+}

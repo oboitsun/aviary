@@ -1,0 +1,16 @@
+.MostPopular {
+  &__button {
+    max-width: toRem(216);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: toRem(16) toRem(32);
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: toRem(14);
+    display: flex;
+    align-items: center;
+  }
+}
